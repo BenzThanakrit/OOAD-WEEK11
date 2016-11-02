@@ -55,3 +55,15 @@ sending -> ready :sending complete
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/LSyn2e0m30NGFQV8B7W11-azn44qIA6cqiR1srkLb7GfwSyZ92xBakGw0e1u2OI9bWqzPqdNAZuoJDsC_VZbDtolVZtlE1YAQpnA1jgpJ0kEyh8pa925cRY55Md7eberuupyznmqgGHSISgr3m00)
+
+#code 
+```
+@startuml
+title decode
+[*] -> ready
+ready -> decodeing 
+decodeing  -> ready   :decodeing complete
+decodeing -> decodeing :decodeing not complete
+@enduml.
+```
+![](http://www.plantuml.com/plantuml/img/LOvB2iCm44FtSmhj2eNc05sKtADquNgcnM1xWgCiSlj-0dMw4HhfCMYS6HgNakMWzWXBfj0dq75tqWiqDOjCNeM9sQ0MNKsknnjE5pGBkifNF-TMflg4TFlZ09nx7BrCsMWxyk_33gtEZijeLT-3XnS0)
