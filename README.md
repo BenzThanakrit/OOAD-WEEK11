@@ -40,3 +40,18 @@ off -> [*]
 ```
 ![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILKepYWjKKZ9By_ZYjQALT2rKoXAJKofv0AJ86v-Mfg2LN5vPdA9GcQnGabfKHv8Y0ia39G5wk5oICrB0He80000)
 
+#code instruction
+```
+@startuml
+
+title read instruction
+[*] -> ready
+ready -> reading :instruction coming
+reading -> reading :reading not complete
+reading -> sending :reading complete
+sending -> sending : sending not complete
+sending -> ready :sending complete
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/LSyn2e0m30NGFQV8B7W11-azn44qIA6cqiR1srkLb7GfwSyZ92xBakGw0e1u2OI9bWqzPqdNAZuoJDsC_VZbDtolVZtlE1YAQpnA1jgpJ0kEyh8pa925cRY55Md7eberuupyznmqgGHSISgr3m00)
