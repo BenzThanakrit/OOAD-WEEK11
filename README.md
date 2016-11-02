@@ -28,3 +28,15 @@ ready -> [*]
 ```
 
 ![](http://www.plantuml.com/plantuml/img/HOun2eH034NxdEBNWXUmMBp1DdPYuUgu36Yop6HOlBrVBIm2oNyFyjliO_AohI8UVGteIbAyLVfgGFs2BOjmhbNHv7-S7373JyrK619zp1mDRifeikrNF2Iv08KKndcdSTvHluzm0nhy9stGcLKE)
+
+#code shut down
+```
+@startuml
+title shut down
+[*] -> ready
+ready -> off :swict is turn off
+off -> [*]
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/SoWkIImgAStDuU8goIp9ILKepYWjKKZ9By_ZYjQALT2rKoXAJKofv0AJ86v-Mfg2LN5vPdA9GcQnGabfKHv8Y0ia39G5wk5oICrB0He80000)
+
