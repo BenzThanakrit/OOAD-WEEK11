@@ -154,3 +154,26 @@ endif
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/XT1D2y8m30RWUtv5w4c5YHzdopnvtLqyb2x3IksapVw_QGSRJ8R7zasUaDI9JUJXxM6pss9LQLItvge0N8TA8Jyf0ER_-tb_m8j6IH-e4eKMZRNqOHCieITcYj86v1Fb3erPoAz96PtJx8oCxKFhsFN1-CdvgnoNIgGNsQpCXh0ThCueoyhIiBRCek1dGCbBGIsvdF0B)
+
+#code
+```
+@startuml
+
+start
+
+:Eat Hotpot; 
+:paymoney 359; 
+if (coupong) then (yes)
+  :discount;
+else (no)
+ :not discount;
+endif
+
+:Go paymoney;
+
+stop
+
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/JOwn3i8m44Ft-mgFwOmOI9Ok27uZebU8rDv5v3haxtiWLUfc-qcsnsRvQzkw4FqLKRndmrEjgYLGhBclAjnnkTxSbndXfLjLUG-m3mj2vpOG4AVId8WbugKnWgZ7KTHm8ZALsJSUYgCu_PQr4eqE_SWE)
