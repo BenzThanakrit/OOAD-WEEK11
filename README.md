@@ -72,7 +72,7 @@ decodeing -> decodeing :decodeing not complete
 ```
 code gade
 @startuml
-(*) --> "Initialization"
+(*) --> "final"
 
 if "point >79" then
   -->[true] "gade A"
@@ -95,7 +95,7 @@ endif
 
 @enduml
 ```
-![](http://www.plantuml.com/plantuml/img/VT4z3u9030RWlR-YwQGcR7x4XU37ukv662vofqtEWnnbyTTx8CPBGBRcRViCRTQ8yj8-BInMIqoI5EdYM5XPVYdXoX406wIwOYUOxlQ4yj0Ei9lDnRUwGBghKkE1FY7IrIlNt3pN4fQrRNJNI7EZGbbWf6r_sjWxKXzFc0E9aHgXcm55m2dsz6N7Rf_Eu-jv_FmVrwva0t7KpuIh0sIX6Lxm1W00)
+![](http://www.plantuml.com/plantuml/img/VT3B3e8m40NG_Np5pQpKX9sFk6dmyGdk28j6Mcs2XRJb_os8iGd8RdBdpbbCxeDqeNlLjDgiaMK2h8sLDHCP3MuROmF4uSW8JsK9VQK8hbCb-24hXHD_Gl3DIUllphGX7glQgtuX2YtZM2BHzZzjwfrvY6VCaKIY9kXkH46OOozVTkeEwJA-NSQl_t5bAwCfZOPEV3PH7fVnysy0)
 
 #code 
 ```
@@ -131,3 +131,26 @@ stop
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/BOqn3e0W40JxVSMLyWLexEpiBOaGDJazme66tqkCtHOpiwCMdqiz6Ty0dltWICCcfEikmeReK1gMg0PMImtDmIRsRSjIh-0Gh_0xinZ0Ja8b-pkoGszA0iQEz8SN)
+
+#code 
+```
+@startuml
+(*) --> "GPA"
+
+if "" then
+  -->[3.0 => GPA] "send acceptance letter"
+
+
+else
+  -> if "else" then
+    -->[2.0 => GPA]"send conditional letter"
+else
+  -> if "else" then
+    -->[1.0 => GPA]"send rejection letter"
+endif
+"send conditional letter" --> (*)
+"send acceptance letter" --> (*)
+"send rejection letter" -->  (*)
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/XT1D2y8m30RWUtv5w4c5YHzdopnvtLqyb2x3IksapVw_QGSRJ8R7zasUaDI9JUJXxM6pss9LQLItvge0N8TA8Jyf0ER_-tb_m8j6IH-e4eKMZRNqOHCieITcYj86v1Fb3erPoAz96PtJx8oCxKFhsFN1-CdvgnoNIgGNsQpCXh0ThCueoyhIiBRCek1dGCbBGIsvdF0B)
