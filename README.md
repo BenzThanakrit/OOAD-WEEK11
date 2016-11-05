@@ -113,3 +113,21 @@ endif
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/POz12i8m44NtESKdAnLw1IsYrfsRxAIBAPtQq7O2IQfuUqT54LpEVv-PDsNA5FCyZSQOnMg9ebZ3xYataMdeA6Mhu7VMmYvw6N2Zp56Xx-3cA3W9NC-eQE8DSiy2W-UwyvrJVQIhbmiEixp3Ai05RBarF2R-D2NKUgP54yBmrvFMTyRORs9Vhkgi3gLI_U41)
+
+#code
+```
+@startuml
+start
+
+while (go school)  is (Yes)
+:study;
+:playground;
+endwhile (No)
+
+:Go travel;
+
+stop
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/BOqn3e0W40JxVSMLyWLexEpiBOaGDJazme66tqkCtHOpiwCMdqiz6Ty0dltWICCcfEikmeReK1gMg0PMImtDmIRsRSjIh-0Gh_0xinZ0Ja8b-pkoGszA0iQEz8SN)
