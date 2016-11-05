@@ -96,3 +96,20 @@ endif
 @enduml
 ```
 ![](http://www.plantuml.com/plantuml/img/VT4z3u9030RWlR-YwQGcR7x4XU37ukv662vofqtEWnnbyTTx8CPBGBRcRViCRTQ8yj8-BInMIqoI5EdYM5XPVYdXoX406wIwOYUOxlQ4yj0Ei9lDnRUwGBghKkE1FY7IrIlNt3pN4fQrRNJNI7EZGbbWf6r_sjWxKXzFc0E9aHgXcm55m2dsz6N7Rf_Eu-jv_FmVrwva0t7KpuIh0sIX6Lxm1W00)
+
+#code 
+```
+@startuml
+(*) --> "Eatbreakfast"
+Eatbreakfast-->Drink water
+if Turn On The Game? then 
+  -->[yes]Having Fun
+  -->Go To Bed
+else 
+  -->[no]read book
+  -->Go To Bed
+endif
+"Go To Bed" --> (*)
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/POz12i8m44NtESKdAnLw1IsYrfsRxAIBAPtQq7O2IQfuUqT54LpEVv-PDsNA5FCyZSQOnMg9ebZ3xYataMdeA6Mhu7VMmYvw6N2Zp56Xx-3cA3W9NC-eQE8DSiy2W-UwyvrJVQIhbmiEixp3Ai05RBarF2R-D2NKUgP54yBmrvFMTyRORs9Vhkgi3gLI_U41)
