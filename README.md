@@ -70,6 +70,7 @@ decodeing -> decodeing :decodeing not complete
 
 #Activity1
 ```
+code gade
 @startuml
 (*) --> "Initialization"
 
