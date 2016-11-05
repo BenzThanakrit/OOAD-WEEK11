@@ -67,3 +67,31 @@ decodeing -> decodeing :decodeing not complete
 @enduml.
 ```
 ![](http://www.plantuml.com/plantuml/img/LOvB2iCm44FtSmhj2eNc05sKtADquNgcnM1xWgCiSlj-0dMw4HhfCMYS6HgNakMWzWXBfj0dq75tqWiqDOjCNeM9sQ0MNKsknnjE5pGBkifNF-TMflg4TFlZ09nx7BrCsMWxyk_33gtEZijeLT-3XnS0)
+
+#Activity1
+```
+@startuml
+(*) --> "Initialization"
+
+if "point >79" then
+  -->[true] "gade A"
+  --> "Transcript"
+
+else
+  ->[false] if "point >69" then
+    -->[true] "gade B"
+      --> "Transcript"
+else
+     ->[false]if "point >59" then 
+     -->[true] "gade C"
+       --> "Transcript"
+     else
+     ->[false]if "point >49" then 
+     -->[true] "gade D"
+       --> "Transcript"
+endif
+"Transcript" --> (*)
+
+@enduml
+```
+![](http://www.plantuml.com/plantuml/img/VT4z3u9030RWlR-YwQGcR7x4XU37ukv662vofqtEWnnbyTTx8CPBGBRcRViCRTQ8yj8-BInMIqoI5EdYM5XPVYdXoX406wIwOYUOxlQ4yj0Ei9lDnRUwGBghKkE1FY7IrIlNt3pN4fQrRNJNI7EZGbbWf6r_sjWxKXzFc0E9aHgXcm55m2dsz6N7Rf_Eu-jv_FmVrwva0t7KpuIh0sIX6Lxm1W00)
